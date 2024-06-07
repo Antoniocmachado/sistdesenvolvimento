@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Pessoais</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/person-data/css/style-users.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__logo-user">             
+                <div class="header__logo">
+                    <img src="./assets/images/icon-logo.png" alt="" class="logo">
+                </div>
+                <div class="header__icon-user">
+                    <img src="./assets/images/icon-user.png" alt="" class="user">
+                </div>
+                <div class="header__text">
+                    <h2>Olá Usuário</h2>
+                    <p>Matrícula:</p>
+                </div>               
+            </div>              
+        </header>        
+            <form class="form__create-user">
+                <h3 id="title__form">Dados pessoais</h3> 
+                
+                <div class="input__box">
+                    <div class="input__fields">
+                        <label for="cpf" class="titles">CPF*</label>
+                        <label class="titles" id="errorcpf">Obrigatório 11 dígitos</label>
+                        <input type="text" class="input__fields" id="cpf" autocomplete="off"> 
+                    </div>  
+                    <div class="input__fields">
+                        <label for="fullname" class="titles">Nome completo*</label> 
+                        <input type="text" class="input__fields" id="fullname" required placeholder=""> 
+                    </div>     
+                    <div class="input__fields">
+                        <label for="socialname" class="titles"  >Nome social</label>
+                        <input type="text" class="input__fields" id="socialname" placeholder=""> 
+                    </div>                       
+                </div>
+                <div class="input__box">    
+                    <div class="input__fields">
+                        <label for="birthdate " class="titles">Data Nascimento*</label>
+                        <input type="date" class="input__fields" id="birthdate" required placeholder=""> 
+                    </div>  
+                    <div class="input__fields">
+                        <label for="mothername " class="titles">Nome da mãe*</label>
+                        <input type="text" class="input__fields" id="mothername" required placeholder=""> 
+                    </div>   
+                    <div class="input__fields">
+                        <!-- <label for="gender" class="titles">Sexo*</label>
+                        <input type="text" class="input__fields" id="gender"  required placeholder=""> 
+                        <label for="gender">Sexo*</label> -->
+                        
+                        <select class="input__fields" id="gender" name="gender">
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                            <option value="other">Outro</option>                            
+                        </select>
+                        <label for="gender" class="titles">Sexo*</label>                    
+                    </div>                      
+                </div>              
+                <div class="footer">
+                    <div class="input__footer"> 
+                        <label  class="titles" id="teenager_user">Cpf responsável(se Menor de idade)</label>
+                        <input type="text" class="fields__footer" autocomplete="off" maxlength="14" placeholder=""> 
+                    </div> 
+                </div>     
+                    <div class="footer">                         
+                        <label  class="titles" id="Required-data">Campos obrigatório marcados com *</label> 
+
+                        <input type="submit" id="button-submit-data" value="Avançar">
+                            <a href="address.html">
+                                <img 
+                                    src="./assets/images/arrow-next.png"
+                                    alt="" 
+                                    class="arrow-next-user"/>                               
+                            </a>                                                
+                    </div>                                      
+            </form>    
+    </div>
+    <script src="./assets/person-data/main-js/cpf.js"></script>
+</body>
+</html>

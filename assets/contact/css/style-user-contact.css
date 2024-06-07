@@ -1,0 +1,189 @@
+.container{ 
+    position: relative;    
+    width: 100%;    
+    height: 100%;
+    background-color: var()--color-blue-create-user   
+} 
+.form__create-user{  
+    margin-top: 60px;   
+    background-color: var(--color-gray-create-user);
+    width: 53.06rem;
+    height: 25.75rem;
+    max-height: 100vh;
+    margin-left: 18.38rem; 
+    border-radius: 1.25rem; 
+    padding: 0 1.25rem 0 1.25rem;
+}
+.header{    
+    width: 87.50rem;
+    height: 100px;
+    background-color: var(--color-blue-create-user);
+    box-shadow: 2px;   
+    box-shadow: 0.125rem 0.125rem 1.56rem 0 rgba(56, 54, 54, 0.5);
+    background-color: transparent;
+}
+.header__logo-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.logo{
+    width: 7.5rem;
+    height: 4.09rem;
+}
+.header__logo{
+    margin-top: 1.063rem;
+    margin-left: 2.13rem;
+}
+.user{
+    width: 2.85rem;
+    height: 2.85rem;
+}
+.header__icon-user img{
+    margin-top: 1.69rem;
+    margin-left: 61.13rem;    
+}
+.header__text{
+    margin-top: 1.739rem;
+    margin-right: 4.63rem;    
+}
+.header__text h2{
+    font-size: 0.89rem;
+    font-weight: 600;/*semi-bold*/    
+    color: var(--color-white-create-user);
+}
+.header__text p{
+    font-size: 0.81rem;
+    font-weight:100;/*regular*/
+    color: var(--color-white-create-user);
+}
+h3{
+    font-weight: 800; /*extra-bold*/
+    font-size: 1.09rem;
+    color: var(--color-blue-create-user);
+    padding: 1.938rem 0 2.56rem;
+    text-align: center;  
+}
+.inputfields__contact{    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;    
+    position: relative;  
+    width: 100%;    
+    height: 2.5rem;   
+}  
+.titles__phone{
+    position: absolute;
+    font-size: 0.81rem;
+    font-weight: 500;/*medium*/
+    color: var(--color-black-create-user);
+    top: -1.31rem;
+    padding-left: 2.5rem;    
+} 
+.titles__email{
+    position: absolute;
+    font-size: 0.81rem;
+    font-weight: 500;/*medium*/
+    color: var(--color-black-create-user);
+    top: -1.31rem;
+    padding-left: 2.5rem; 
+    margin-left: 16.75rem;   
+} 
+.inputfields__contact  input{
+    position: relative;
+    background-color:var(--color-white-create-user);
+    border-radius: 1.25rem;
+    width: 13.75rem;
+    height: 2.5rem;
+    padding-left: 15px;
+    color: var(--color-black-create-user);
+    font-size: 0.94rem;
+    font-weight: 500;/*medium*/
+    outline: none;
+}
+.inputfields__contact .input__fields{
+    /* background-color: #718491;*/
+    margin: 0 1.31rem 0 1.31rem;
+}
+.span-phone{
+    display: none;
+    margin:1px 0 0 1px;
+    color: hsl(12, 92%, 44%); 
+    font-size: 14px;
+    position: absolute;    
+    top: 41px;
+    left: 36px;
+}
+.span-email{
+    display: none;
+    margin:1px 0 0 1px;
+    color: hsl(12, 92%, 44%); 
+    font-size: 14px;
+    position: absolute;    
+    top: 41px;
+    left: 305px;
+}
+.pregnant{
+    position: absolute;  
+    margin-top: -23px;
+    margin-left: 42px;
+}
+.bedridden{
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 160px;
+}
+.yes__no img{
+    position: absolute;
+    display: grid;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.bedridden__no{
+    margin-left: 12.25rem;
+}
+.bedridden__yes{
+    margin-left: 9.63rem;
+}
+.pregnant__no{
+    margin-left: 4.875rem;   
+}
+.pregnant__yes{    
+    margin-left: 2.19rem;
+}
+.input__create{
+    position: relative;
+    width: 100%;
+    height: 17.25rem;    
+}
+ #Required-fields{
+    position: absolute;
+    margin-top: 13.9rem;
+    margin-left: 2.7rem;
+    font-size: 0.81rem;
+    font-weight: 500;/*medium*/
+    color: var(--color-blue-create-user);    
+}
+.input__create input[type=submit]{
+    position: absolute;
+    background-color: var(--color-blue-create-user);
+    width: 13.75rem;
+    height: 2.5rem;
+    font-size: 1.09rem;
+    font-weight: 700;
+    color: var(--color-white-create-user);
+    border-radius: 1.25rem;
+    /* right: 0px;*/
+    padding: 0 auto;
+    cursor: pointer;
+    margin-top: 12.498rem;  
+    margin-left: 35.92rem;
+} 
+.input__create .arrow-next{
+    position: absolute;
+    right: 1.48rem;
+    top: 13rem;
+    background-color: var(--color-blue-create-user);
+    width: 1.56rem;
+    height: 1.56rem;
+} 

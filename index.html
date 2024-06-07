@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/login/css/style-login.css">      
+    
+</head>
+<body>
+    <div class="container"> 
+        <header class="header">
+            <div class="header__logo-user">             
+                <div class="header__logo">
+                    <img src="./assets/images/icon-logo.png" alt="" class="login">
+                </div>
+                <div class="header__icon-user">
+                    <img src="./assets/images/icon-user.png" alt="" class="user">
+                </div>
+                <div class="header__text">
+                    <h2>Olá Usuário</h2>
+                    <p>Matrícula:</p>
+                </div>               
+            </div>              
+        </header>  
+        <form action=""method="post" id="form__login"> 
+
+            <div class="logo__sist"> 
+                <img src="./assets/login/images/logo-text.svg" class="logo" alt="logo do sistema de triagens nas cores azul, branco e cinza">                             
+            </div> 
+            <!-- <div class="input__container"> -->
+                <div class="input__fields">
+                    <input type="email" name="email"  id="email" placeholder="Email" class="inputs required" oninput="emailValidate()" />
+                    <label for="email"  name="email">Email</label>
+                    <span class="span-required">Digite um e-mail válido</span>
+                </div>
+                <div class="input__fields">
+                    <input type="password" name="password"  id="password" placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()" />
+                    <label for="password"  name="password">Senha</label> 
+                    <span class="span-required">Senha:mínimo 8 caracteres</span>
+                </div>
+                <div class="button">
+                   <input type="submit" class="submit" id="button_login" value="Entrar"/>  
+                </div>     
+                <div class="forget__password">
+                    <a href="#" class="forget">Esqueci minha senha</a>               
+                </div>    
+        </form>       
+    </div>    
+    <script src="./assets/login/main.js/login.js"></script>
+</body> 
+</html>

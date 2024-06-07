@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuários-contato</title>
+    <link rel="stylesheet" href="./assets/css/style.css">    
+    <link rel="stylesheet" href="./assets/contact/css/style-user-contact.css">    
+</head>
+<body>      
+    <div class="container">
+        <header class="header">
+            <div class="header__logo-user">             
+                <div class="header__logo">
+                    <img src="./assets/images/icon-logo.png" alt="" class="logo">
+                </div>
+                <div class="header__icon-user">
+                    <img src="./assets/images/icon-user.png" alt="" class="user">
+                </div>
+                <div class="header__text">
+                    <h2>Olá Usuário</h2>
+                    <p>Matrícula:</p>
+                </div>               
+            </div>              
+        </header>        
+            <form class="form__create-user">
+                <h3 id="title__form">Contato</h3> 
+                <div class="inputfields__contact">
+                    <label class="titles__phone" for="phone">Celular*</label>
+                    <input type="text" id="phone" name="phone" class="input__fields">
+                    <span class="span-phone">Mínimo 8 caracteres</span>
+
+                    <label class="titles__email"  for="email">E-mail*<E-mail></E-mail></label>
+                    <input type="text" id="email" name="email" class="input__fields">
+                    <span class="span-email">Digite um e-mail válido</span> 
+
+                    <div class="yes__no"> 
+                        <label class="pregnant" for="phone">Gestante?</label>       
+                        <img 
+                        src="./assets/images/pregnant-yes.png"
+                        alt="" 
+                        class="pregnant__yes"/>         
+                        <img 
+                        src="./assets/images/pregnant-no.png"
+                        alt="" 
+                        class="pregnant__no"/>   
+
+                        <label class="bedridden" for="phone">Acamado?</label>  
+                        <img 
+                        src="./assets/images/bedridden-yes.png"
+                        alt="" 
+                        class="bedridden__yes"/>          
+                        <img 
+                        src="./assets/images/bedridden-no.png"
+                        alt="" 
+                        class="bedridden__no"/> 
+                    </div>
+                </div>
+                        
+                <div class="input__create">
+                    <label  class="titles" id="Required-fields">Campos obrigatório marcados com *</label>  
+                    <label  class="titles" id=""></label>                                                  
+                    <input type="submit" class="input__create" value="Cadastrar">
+                        <a href="#">
+                            <img 
+                                src="./assets/images/arrow-next.png"
+                                alt="" 
+                                class="arrow-next"/>                            
+                        </a>                                         
+                </div>                       
+            </form>    
+    </div> 
+    <script src="./assets/contact/mainjs/valid.js" ></script>  
+</body>
+</html> 

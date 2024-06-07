@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuários-endereço</title>
+    <link rel="stylesheet" href="./assets/css/style.css">    
+    <link rel="stylesheet" href="./assets/address/css/style-user-address.css">
+<body>      
+    <div class="container">
+        <header class="header">
+            <div class="header__logo-user">             
+                <div class="header__logo">
+                    <img src="./assets/images/icon-logo.png" alt="" class="logo">
+                </div>
+                <div class="header__icon-user">
+                    <img src="./assets/images/icon-user.png" alt="" class="user">
+                </div>
+                <div class="header__text">
+                    <h2>Olá Usuário</h2>
+                    <p>Matrícula:</p>
+                </div>               
+            </div>              
+        </header>        
+            <form class="form__create-user">
+                <h3 id="title__form">Endereço</h3>
+                <div class="input__box">
+                    <div class="input__fields">
+                        <label for="cep" class="titles">CEP</label>
+                        <input type="text" class="input__fields required" id="cep"  maxlength="9"> 
+                        <span id="cep-required">Obrigatório 8 dígitos</span>
+                    </div>  
+                    <div class="input__fields">
+                        <label  class="titles">Logradouro*</label>
+                        <input type="text" class="input_fields required" placeholder=""> 
+                    </div>     
+                    <div class="input__fields">
+                        <label  class="titles">Número*</label>
+                        <input type="text" class="input__fields required" placeholder=""> 
+                    </div>                       
+                </div>
+                <div class="input__box">
+                    <div class="input__fields">
+                        <label  class="titles">Bairro*</label>
+                        <input type="text" class="input__fields required" placeholder=""> 
+                    </div>  
+                    <div class="input__fields">
+                        <label  class="titles">Cidade*</label>
+                        <input type="text" class="input__fields required" placeholder=""> 
+                    </div>   
+                    <div class="input__fields">
+                        <label  class="titles">Complemento</label>
+                        <input type="text" class="input__fields required" placeholder=""> 
+                    </div>                      
+                </div>
+                <div class="input__box-right">
+                    <div class="input__fields"> 
+                        <label  class="titles" id="">Estado*</label>
+                        <input type="text" class="input__fields required" placeholder=""> 
+                    </div>                      
+                    <div class="input__fields">  
+                        <label  class="titles" id=""></label>                                                  
+                        <input type="submit" class="input__fields required" value="Avançar">
+                            <a href="contact.html">
+                                <img 
+                                    src="./assets/images/arrow-next.png"
+                                    alt="" 
+                                    class="arrow-next"/>                               
+                            </a> 
+                            <label  class="titles" id="Required-fields">Campos obrigatório marcados com *</label>                  
+                    </div> 
+                  
+            </form>    
+    </div>
+    <script src="./assets/address/mai-js/cep.js"></script>
+</body>
+</html>
