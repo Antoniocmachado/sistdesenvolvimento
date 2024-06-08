@@ -16,17 +16,25 @@ cep.addEventListener('input', () => {
         //formata o ddd e concatena o valor
         //slice-extrai uma parte do array
         //join-une os elementos do array em uma unica string        
-        var inputValue = input.value;
-        console.log(inputValue)
+        var inputValue = input.value;        
         numeroFormatado += `${numerosArray.slice(0,5).join('')}`;
+        console.log(numeroFormatado);
+        if(numerosArray.length < 8){
+            // console.log("deletou numero");
+            setError(labelError); 
+        }  
     }
-     //acessa o if quando a quantidade de numeros é maior que 4
-    //  if(numerosArray.length <= 4){
-    //     numeroFormatado += ` ${numerosArray.slice(0,4).join('')}`;
-    //  }
+       
+    //acessa o if quando a quantidade de numeros é maior que 4
+    
      if(numerosArray.length > 5){
         numeroFormatado += `-${numerosArray.slice(5,8).join('')}`;
      }
+
+     if(!numerosArray.length){
+        console.log("zerar campo");
+        resetError();
+    }
     //enviar par ao numero o campo formatado
     cep.value  = numeroFormatado;
 });
@@ -34,14 +42,14 @@ cep.addEventListener('input', () => {
 input.addEventListener('keypress',() => {     
     let inputlength = input.value.length;
     if(inputlength < 8){
-        console.log(`menor que 8: ${inputlength}`);
+        // console.log(`menor que 8: ${inputlength}`);
         setError(spanError); 
        if(inputlength <= 7){
-        console.log(`menor igual a 7: ${inputlength}`);
+        // console.log(`menor igual a 7: ${inputlength}`);
             setError(spanError);
        } 
     }else if(inputlength >= 8){ 
-        console.log(`maior que 8: ${inputlength}`);     
+        // console.log(`maior que 8: ${inputlength}`);     
         removeError(spanError); 
     }    
         
@@ -54,5 +62,9 @@ function setError(){
 // função para limpar o error:
 function removeError(){
     input.style.border = '0.2px solid #0183d9';
+    spanError.style.display = '';   
+}
+function resetError(){
+    input.style.border = '';
     spanError.style.display = '';   
 }

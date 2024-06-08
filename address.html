@@ -32,7 +32,7 @@
                     </div>  
                     <div class="input__fields">
                         <label  class="titles">Logradouro*</label>
-                        <input type="text" class="input_fields required" placeholder=""> 
+                        <input type="text" class="input__fields required" placeholder=""> 
                     </div>     
                     <div class="input__fields">
                         <label  class="titles">Número*</label>
@@ -55,8 +55,34 @@
                 </div>
                 <div class="input__box-right">
                     <div class="input__fields"> 
-                        <label  class="titles" id="">Estado*</label>
-                        <input type="text" class="input__fields required" placeholder=""> 
+                        <label  class="titles">Estado*</label>
+                        <!-- <input type="text" class="input__fields required" placeholder="">  -->
+                        <select class="input__fields required" id="uf" name="uf">
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option> 
+                            <option value="BA">BA</option>  
+                            <option value="CE">CE</option>  
+                            <option value="ES">ES</option>  
+                            <option value="GO">GO</option>  
+                            <option value="MA">MA</option>  
+                            <option value="MT">MT</option>  
+                            <option value="MS">MS</option>  
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>  
+                            <option value="PB">PB</option>  
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>  
+                            <option value="PI">PI</option>  
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>  
+                            <option value="RO">RO</option>  
+                            <option value="RR">RR</option>
+                            <option value="SS">SC</option>
+                            <option value="SP">SP</option>  
+                            <option value="SE">SE</option>  
+                            <option value="TO">TO</option> 
+                        </select>
                     </div>                      
                     <div class="input__fields">  
                         <label  class="titles" id=""></label>                                                  
@@ -67,7 +93,7 @@
                                     alt="" 
                                     class="arrow-next"/>                               
                             </a> 
-                            <label  class="titles" id="Required-fields">Campos obrigatório marcados com *</label>                  
+                            <label  class="titles" id="Required-fields">Campos obrigatórios marcados com *</label>                  
                     </div> 
                   
             </form>    
